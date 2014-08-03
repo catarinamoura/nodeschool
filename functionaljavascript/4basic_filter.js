@@ -45,14 +45,14 @@
       var filtered = messages.filter( function f(obj){
             // console.log(obj.message);
              return obj.message.length < 50 ;
-      })
+      });
       
       var array_messages = filtered.map(function m(obj_short){
           
           return obj_short.message;
-       })
+       });
       return array_messages;
      }
   
-     module.exports = getShortMessages
+     module.exports = getShortMessages;
      
